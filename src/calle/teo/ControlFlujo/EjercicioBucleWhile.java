@@ -1,4 +1,4 @@
-package calle.teo.flujo;
+package calle.teo.ControlFlujo;
 
 import javax.swing.*;
 

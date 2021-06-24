@@ -1,4 +1,4 @@
-package calle.teo.flujo;
+package calle.teo.ControlFlujo;
 
 /*En este ejercicio se pide al usuario que introduzca su dirección de email con ayuda de la clase JOptionPane.
 

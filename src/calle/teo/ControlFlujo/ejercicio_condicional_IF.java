@@ -1,4 +1,4 @@
-package calle.teo.flujo;
+package calle.teo.ControlFlujo;
 
 /*
 * programa que permita calcular el peso ideal de una persona teniendo en cuenta

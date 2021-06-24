@@ -1,4 +1,4 @@
-package calle.teo.flujo;
+package calle.teo.ControlFlujo;
 
 /*
 * Programa que pregunta cuantos hijos se tienen y en funcion de la respuesta
