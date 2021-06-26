@@ -10,12 +10,20 @@ public class UsoVehiculos {
     public static void main(String[] args) {
 
         /*+++Crear un objeto de la clase Vehiculo (otro fichero)+++*/
-        Vehiculos miCoche = new Vehiculos();
+        Vehiculos miCoche = new Vehiculos(4);
 
         System.out.println("Antes de usar el metodo setcolor estoy "+miCoche.getColor());
 
-        miCoche.setColor();
+        miCoche.setColor("Amarillo");
         System.out.println("Despues de haber usado setcolor mi color es "+miCoche.getColor());
+
+        Vehiculos miCoche2 = new Vehiculos(4);
+        miCoche2.setColor("Rojo");
+        System.out.println(miCoche2.getColor());
+
+        Vehiculos moto1 = new Vehiculos(2);
+        System.out.println(miCoche.getDatosVehiculo());
+        System.out.println(moto1.getDatosVehiculo());
 
     }
 

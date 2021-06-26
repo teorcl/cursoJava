@@ -2,10 +2,10 @@ package calle.teo.poo;
 
 public class Vehiculos {
 
-    public Vehiculos(){//Medoto constructor de la clase. Mismo noombre de la clase
+    public Vehiculos(int ruedas){//Medoto constructor de la clase. Mismo noombre de la clase
 
         //Estado inicial del vehiculo
-        ruedas = 4;
+        this.ruedas = ruedas;
         largo = 2;
         ancho = 1;
         peso = 2;
@@ -14,13 +14,20 @@ public class Vehiculos {
     }
 
     //Metodo setter para establecer valores a una propiedad
-    public void setColor(){
-        color = "azul";
+    public void setColor(String color){
+        this.color = color;
     }
+
 
     //Metodo getter para devolver el valor de la prpiedad color
     public String getColor(){
         return color;
+    }
+
+
+    //Metodo getter para devolver los datos del vehiculo
+    public String getDatosVehiculo(){
+        return "El vehivulo tiene "+ruedas+" ruedas, y un largo de "+largo+" metros";
     }
 
     //Propiedades o atributos
