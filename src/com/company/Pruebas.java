@@ -13,13 +13,15 @@ public class Pruebas {
         //Util para recorrerlo
         System.out.println(my_array.length);
 
-        DecimalFormat twodeci = new DecimalFormat("#.0");
+        //DecimalFormat twodeci = new DecimalFormat("#.0");
 
-        for (int i=0; i<100;i++) {
+        /*for (int i=0; i<100;i++) {
            double num= (double)Math.round(Math.random() * 10d) / 10d;
            double num2 = num*10-((double)Math.round(Math.random() * 10d) / 10d);
             System.out.println(num2);
-        }//System.out.println(twodeci.format(Math.random()));
+        }*/ //System.out.println(twodeci.format(Math.random()));
+
+        System.out.println("El nombre inicial es: %s%n%n");
 
     }
 
