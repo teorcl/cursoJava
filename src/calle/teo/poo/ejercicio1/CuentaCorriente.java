@@ -34,6 +34,9 @@ public class CuentaCorriente {
         return "Titular "+nombreTitular+" numero de cuenta "+numeroCuenta+" saldo "+saldo;
     }
 
+
+    /*++--Una pequeña muestra de como interactuan dos objetos de una misma clase--++*/
+
     //Este metodo trasfiere de la cuenta titula1 a titular2 (dependiendo de la necesidad se invierten los parametros cuando se pasan)
     public static void Transferencia(CuentaCorriente titular1, CuentaCorriente titular2, double cantidad){
         titular1.saldo -= cantidad;

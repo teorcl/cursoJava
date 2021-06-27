@@ -13,6 +13,20 @@ public class Vehiculos {
 
     }
 
+    public void setExtra(boolean climatizador){
+        this.climatizador = climatizador;
+    }
+    /*---Sobrecarga de metodo---*/
+    public void setExtra(boolean climatizador, boolean tapiceria_cuero, boolean gps){
+
+    }
+
+    public String getExtra(){
+        if(this.climatizador==false) return "Sin climatizador";
+        else return "Con climatizador";
+    }
+
+
     //Metodo setter para establecer valores a una propiedad
     public void setColor(String color){
         this.color = color;
@@ -36,6 +50,9 @@ public class Vehiculos {
     private int largo;
     private int ancho;
     private int peso;
+    private boolean climatizador;
+    private boolean tapiceria_cuero;
+    private boolean gps;
 
 
 
