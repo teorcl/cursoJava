@@ -13,17 +13,32 @@ public class Vehiculos {
 
     }
 
+    /*****************Sobre carga de constructor*******************/
+    public Vehiculos(int ruedas, int largo, double ancho, int peso){
+        this.ruedas = ruedas;
+        this.largo = largo;
+        this.ancho = ancho;
+        this.peso = peso;
+        color = "sin color";
+    }
+
+
     public void setExtra(boolean climatizador){
         this.climatizador = climatizador;
     }
     /*---Sobrecarga de metodo---*/
     public void setExtra(boolean climatizador, boolean tapiceria_cuero, boolean gps){
+        this.climatizador = climatizador;
+        this.tapiceria_cuero = tapiceria_cuero;
+        this.gps = gps;
+
 
     }
 
     public String getExtra(){
-        if(this.climatizador==false) return "Sin climatizador";
-        else return "Con climatizador";
+        if(climatizador && tapiceria_cuero == false && gps == false) return "Tu Vehiculo lleva el pack 1 de extras";
+        else if(climatizador && tapiceria_cuero && gps) return "Tu vehiculo lleva el pack 2 de extras";
+        else return "Sin pack extras";
     }
 
 
@@ -48,7 +63,7 @@ public class Vehiculos {
     private int ruedas;
     private String color;
     private int largo;
-    private int ancho;
+    private double ancho;
     private int peso;
     private boolean climatizador;
     private boolean tapiceria_cuero;

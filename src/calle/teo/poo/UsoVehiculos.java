@@ -19,11 +19,18 @@ public class UsoVehiculos {
 
         Vehiculos miCoche2 = new Vehiculos(4);
         miCoche2.setColor("Rojo");
-        miCoche2.setExtra(false);
+        miCoche2.setExtra(true,false,true);
         System.out.println(miCoche2.getColor());
         System.out.println(miCoche2.getExtra());
 
         Vehiculos moto1 = new Vehiculos(2);
+        Vehiculos miMoto = new Vehiculos(2, 1, 0.7,200);
+        miMoto.setColor("gris");
+        Vehiculos miCamion = new Vehiculos(6,3,1.7,1000);
+        miCamion.setColor("azul");
+        miCamion.setExtra(true,true, true);
+        System.out.println(miCamion.getExtra());
+        System.out.println(miCamion.getDatosVehiculo());
         System.out.println(miCoche.getDatosVehiculo());
         System.out.println(moto1.getDatosVehiculo());
 

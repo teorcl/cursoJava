@@ -21,7 +21,8 @@ public class Pruebas {
             System.out.println(num2);
         }*/ //System.out.println(twodeci.format(Math.random()));
 
-        System.out.println("El nombre inicial es: %s%n%n");
+
+        System.out.println(my_array);
 
     }
 
