@@ -11,7 +11,8 @@ public class UsoColegio {
         agricola.nuevoAlumno("Esteban",5.9);
         agricola.getDatosAlumno("Juan");
         agricola.setNotaMedia("Juan",9);
-        agricola.getTodosAlumnos();
+        //agricola.expulsaAlumno("Esteban");
+        //agricola.getTodosAlumnos();
 
     }
 

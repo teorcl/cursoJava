@@ -18,10 +18,12 @@ public class Colegio {
 
     }
 
+    //Setter
     public void nuevoAlumno(String nombreAlumno, double nota){
         listaAlumnos.add(new Alumno(nombreAlumno,nota));
     }
 
+    //Getter
     public static String getNombreColegio(){
         return nombreColegio;
     }
@@ -36,8 +38,8 @@ public class Colegio {
         }
     }
 
-    public boolean getDatosAlumno(String nombre){
-        boolean encontrado = false;
+    public void getDatosAlumno(String nombre){
+        /*boolean encontrado = false;
         int i = 0;
 
         while (encontrado == false && i < listaAlumnos.size()){
@@ -52,13 +54,19 @@ public class Colegio {
             System.out.println("Nota media: "+listaAlumnos.get(i).getNota());
             System.out.println();
             return false;
-        }else return true;
+        }else return true;*/
+
+        System.out.println( "Nombre alumno: "+listaAlumnos.get(getBuscarNombre(nombre)).getNombreAlumno()+
+                "\n# alumno: "+listaAlumnos.get(getBuscarNombre(nombre)).getIdAlumnos()+
+                "\nColegio: "+ Colegio.getNombreColegio()+
+                "Nota media: "+listaAlumnos.get(getBuscarNombre(nombre)).getNota());
+        System.out.println();
     }
 
-    public boolean expulsaAlumno(String nomAlumnoAxpulsar){
+    public void expulsaAlumno(String nomAlumnoAxpulsar){
         /*************************/
-
-        boolean encontrado = false;
+        listaAlumnos.remove(getBuscarNombre(nomAlumnoAxpulsar));
+        /*boolean encontrado = false;
         int i = 0;
 
         while (encontrado == false && i < listaAlumnos.size()){
@@ -69,15 +77,16 @@ public class Colegio {
         if(encontrado){
             listaAlumnos.remove(i);
             return false;
-        }else return true;
+        }else return true;*/
 
         /************************/
     }
 
     public void setNotaMedia(String nombre, double nota){
         /*************************/
+        listaAlumnos.get(getBuscarNombre(nombre)).setNota(nota);
 
-        boolean encontrado = false;
+        /*boolean encontrado = false;
         int i = 0;
 
         while (encontrado == false && i < listaAlumnos.size()){
@@ -88,9 +97,31 @@ public class Colegio {
         if(encontrado){
             listaAlumnos.get(i).setNota(nota);
 
-        }//else return true;
+        }*/
 
         /************************/
     }
+
+    public int getBuscarNombre(String nombre){
+        //Corregir cuando no lo encuentra dado que i=0
+        boolean encontrado = false;
+        int i = 0;
+
+        while (encontrado == false && i < listaAlumnos.size()){
+            if(listaAlumnos.get(i).getNombreAlumno().compareToIgnoreCase(nombre)==0){
+                encontrado = true;
+            }else i++;
+        }
+        if(encontrado) {
+            encontrado = false;
+            return i;
+        }else {
+            encontrado = true;
+            return i;
+        }
+
+    }
+
+
 
 }
