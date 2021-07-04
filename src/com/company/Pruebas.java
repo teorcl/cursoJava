@@ -22,8 +22,14 @@ public class Pruebas {
         }*/ //System.out.println(twodeci.format(Math.random()));
 
 
-        System.out.println(my_array);
+       // System.out.println(my_array);
+
+
+
+
 
     }
+
+
 
 }
